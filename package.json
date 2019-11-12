@@ -1,5 +1,6 @@
 {
   "name": "jemplator",
+  "description": "Read and fill template files.",
   "version": "1.2.1",
   "main": "index.js",
   "scripts": {
@@ -9,5 +10,8 @@
   "dependencies": {
     "lodash": "^4.17.15",
     "safe-eval": "^0.4.1"
+  },
+  "repository": {
+    "url": "https://github.com/jdeurt/node-jemplator.git"
   }
 }
