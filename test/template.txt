@@ -1,0 +1,15 @@
+# Profile for {{ user.name }}
+
+* Name: {{ user.name }}
+* Age: {{ user.age }}
+* Gender: {{ user.gender }}
+
+## Favorite numbers
+
+{{>> js {{ numbers }}.map(num => `* ${num}`).join("\n") }}
+
+## The entire user data object
+
+```js
+{{ user }}
+```
