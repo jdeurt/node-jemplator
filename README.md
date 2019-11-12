@@ -56,6 +56,23 @@ Inline sandboxed Javascript execution:
 Yes, [1,2,3] gets stringified.
 ```
 
+#### Filling a template string
+
+```javascript
+const Jemplator = require("jemplator");
+
+const templateString = "{{ greeting }} {{ user.name }}{{>> js '!' }}";
+
+console.log(Jemplator.fillStr(templateString, {
+  greeting: "Hello",
+  user: {
+    name: "Bob"
+  }
+}));
+
+// "Hello Bob!"
+```
+
 ### License
 
 This project is licensed under the MIT License
